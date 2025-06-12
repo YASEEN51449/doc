@@ -1,1 +1,20 @@
-Program to find the minimum (or maximum) element of an array
+1.Program to find the minimum (or maximum) element of an array
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    vector<int> arr = {1, 423, 6, 46, 34, 23, 13, 53, 4};
+  
+    // Implemented inbuilt function to sort the vector
+    sort(arr.begin(), arr.end());
+  
+    // After sorting, the value at the 0th position will be the minimum
+    // and the last position will be the maximum
+    cout << "Minimum element of array: " << arr[0] << endl;
+    cout<< "Maximum element of array: " << arr[arr.size() - 1] << endl;
+    return 0;
+}
